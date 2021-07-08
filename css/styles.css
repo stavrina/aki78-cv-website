@@ -1,0 +1,405 @@
+/*********************************************************/
+/**********************COLOR SCHEME**********************/
+/***
+#343434
+#055e68
+#62a388
+#b9d2d2
+#4ecca3
+#eeeeee
+#113a5d***/
+/****************ALTERNATE COLOR SCHEME***********************/
+/*
+#1c2b2d
+#1f6f8b
+#99a8b2
+#e6d5b8
+*/
+/* font-family: 'Montserrat', sans-serif; */
+/************** SECTIONS TO ctrl-f//cmd-f to **************/
+/**********************TAG SELECTORS**********************/
+
+:root {
+  --placeholder-variable: 90px
+}
+
+
+body {
+  background-color: #e6d5b8;
+  margin: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: #1c2b2d;
+  font-size: 5.625rem;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  color: #1f6f8b;
+  font-size: 2.5rem;
+  margin-right: 1%;
+}
+
+h3 {
+  color: #11999E;
+}
+
+a {
+  color: #136568;
+}
+
+
+hr {
+  border-color: #EAF6F6;
+  border-style: dotted;
+  border-width: 10px 0 0 0;
+  width: 5%;
+}
+
+ul {
+  list-style-position: outside;
+  direction: rtl;
+  list-style-type: disclosure-closed;
+  font-weight: 600;
+
+}
+
+
+ul li::marker {
+  color: #1f6f8b;
+}
+
+ul.sublist {
+  direction: ltr;
+  list-style-type: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+
+/**********************CLASS SELECTORS**********************/
+.main-contents {
+  width: 90%;
+  height: 100%;
+  text-align: right;
+  margin: 0;
+  float: right;
+  padding: 60px 0 0 0;
+}
+.fullsize {
+  height: 88.4vh;
+}
+
+.container {
+  line-height: 1.1;
+  text-align: right;
+  padding: 0 3%;
+}
+
+.para-container {
+  max-width: 70%;
+  float: right;
+}
+
+#contact .container {
+  line-height: 1.1;
+  text-align: right;
+  padding: 0 3%;
+  float: right;
+  margin-top: 50px;
+}
+
+/* GREETING-PROFILE */
+.profile {
+  margin: auto auto auto auto;
+  width: 25%;
+}
+
+.wrapper {
+  height: 25%;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 72px;
+}
+
+/************CONTACT PAGE***********/
+
+/* CONTACT TABLE */
+.contact-me {
+  margin: 0;
+  width: 500px;
+  display: block;
+  float: right;
+}
+
+
+/*CONTACT BUTTON*/
+.buttonanchor {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.contactbtn {
+  display: inline-block;
+  background-color: #1c2b2d;
+  font-size: 2rem;
+  border: 3px;
+  text-align: center;
+  border-radius: 2px 20px 2px 20px;
+  box-shadow: 10px 5px #5a7d81;
+  margin:10%;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.contactbtn:hover {
+  background-color: #1c2b2d91;
+}
+
+.contactbtn:active {
+  background-color:#5a7d81;
+  box-shadow: none;
+  transform: translate(10px, 5px);
+
+}
+
+/*CONTACT BUTTON*/
+
+/*ANIMATED TEXT*/
+.animated_text {
+  width: 240px;
+  animation-name: descriptor;
+  animation-duration: 6s;
+  animation-timing-function: steps(6);
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 72px;
+  color: #1c2b2d;
+}
+
+@keyframes descriptor {
+  0% {
+    width: 0;
+  }
+}
+
+.bcursor {
+  animation-name: blinking-cursor;
+  animation-duration:1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  font-weight: 400;
+  font-size: 72px;
+  color: #1c2b2d;
+}
+@keyframes blinking-cursor {
+  50% {color: transparent;}
+}
+/*ANIMATED TEXT*/
+
+/* TOP NAVIGATION */
+.topnavbar {
+  width: 100%;
+  height: 50px;
+  background-color: #1c2b2d;
+  text-align: right;
+  position: fixed;
+}
+
+#navbar nav {
+  padding: 10px 0;
+}
+
+#navbar a {
+  color: #e6d5b8;
+  padding: 0 2vw;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: #99a8b2;
+  text-decoration: none;
+}
+
+#navbar a:active {
+  color: #99a8b221;
+  text-decoration: none;
+}
+
+
+
+/* NAVIGATION MENU */
+.sidenavbar {
+  background-color: #1c2b2d;
+  margin-top: 50px;
+  height: 100%;
+  position: fixed;
+  width: 6vw;
+  min-width: 100px;
+  max-width: 125px;
+  transition: 1s ease-in-out;
+  visibility: visible;
+  display: block;
+}
+
+.menu-list {
+  border: none;
+  /* background-color: #1c2b2d; */
+  background-color: none;
+  color: #e6d5b8;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.25rem;
+  margin: 1%;
+  padding: 1%;
+  align-items: center;
+  justify-content: center;
+  max-width: 90px;
+  position: relative;
+  visibility: visible;
+  transition: 0.7s ease-in-out;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.hide {
+  width : 0;
+  height: 0;
+}
+
+.hide-link.menu-list {
+  color: #e6d5b800;
+  display: block;
+  visibility: hidden;
+  transition: 0.7s ease-in;
+}
+
+.menu-list:hover {
+  color: #99a8b2;
+  display: block;
+  /* width: 300px; */
+  transition: 0.3s ease-in-out;
+}
+
+.menu-list:active {
+  color: #99a8b23f;
+}
+
+div #sidenavlist{
+  text-align: center;
+  visibility: visible;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: fit-content;
+  transition: 0.9s ease-in-out;
+}
+
+/********************** BURGER **********************/
+.menu-container {
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 40px;
+  height: 42px;
+  border-radius: 10%;
+  background-color: #e6d5b8;
+  cursor: pointer;
+}
+
+.menu-container:hover {
+  /* background-color: #1f6f8b; */
+  background-color: #e6d5b8ab;
+}
+
+.bar {
+  background-color: #343434;
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+.top-bar {
+  margin-top: 9px;
+}
+
+.middle-bar {
+  margin-top: 18px;
+}
+
+.bottom-bar {
+  margin-top: 27px;
+}
+
+
+.open .top-bar {
+  width: 25px;
+  margin-left: 10px;
+  margin-top: 9px;
+}
+
+.open .middle-bar {
+  width: 20px;
+  margin-top: 18px;
+}
+
+.open .bottom-bar {
+  width: 25px;
+  margin-left: 10px;
+  margin-top: 27px;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #1c2b2d;
+  position: inherit;
+  display: flex;
+}
+
+/***********ICONS*********/
+.icon-container {
+  width: 50%;
+  display: block;
+  position: relative;
+  margin: 0 50%;
+}
+.icon {
+  margin: 3px 0;
+  font-size: 37px;
+  display: inline-block;
+}
+
+.icon:hover {
+  color: #e6d5b8;
+}
+
+@media only screen and (max-width: 599px) {
+  #navbar nav {
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 600px){
+  .menu-container {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/**********************ID SELECTORS**********************/
